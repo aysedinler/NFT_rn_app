@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { COLORS, NFTData } from '../constants';
 import FocusedStatusBar from '../components/FocusedStatusBar';
 import NFTcard from '../components/NFTcard';
+import HomeHeader from '../components/HomeHeader';
 
 const Home = () => {
   return (
@@ -11,13 +12,13 @@ const Home = () => {
       <FocusedStatusBar background={COLORS.primary} />
 
       <View style={{ flex: 1 }}>
-       
         <View style={{ zIndex: 0 }}>
           <FlatList
             data={NFTData}
             keyExtractor={(item) => item.id}
             renderItem={({ item }) => <NFTcard data={item} />}
             showsVerticalScrollIndicator={false}
+            ListHeaderComponent={<HomeHeader/>}
           />
         </View>
 
