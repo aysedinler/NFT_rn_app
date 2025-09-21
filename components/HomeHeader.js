@@ -3,7 +3,7 @@ import React from 'react'
 import { COLORS, SIZES, SHADOWS, assets, FONTS } from "../constants"
 
 
-const HomeHeader = ({onSearch}) => {
+const HomeHeader = ({ onSearch }) => {
   return (
     <View style={{
       backgroundColor: COLORS.primary,
@@ -68,15 +68,16 @@ const HomeHeader = ({onSearch}) => {
         </Text>
       </View>
       <View style={{
-        marginTop: SIZES.font}}>
+        marginTop: SIZES.font
+      }}>
         <View style={{
-          width:"100%",
-          borderRadius:SIZES.font,
-          backgroundColor:COLORS.gray,
-          flexDirection:"row",
-          alignItems:"center",
-          paddingHorizontal:SIZES.font,
-          paddingVertical:SIZES.small-2
+          width: "100%",
+          borderRadius: SIZES.font,
+          backgroundColor: COLORS.gray,
+          flexDirection: "row",
+          alignItems: "center",
+          paddingHorizontal: SIZES.font,
+          paddingVertical: SIZES.small - 2
         }}>
           <Image
             source={assets.search}
